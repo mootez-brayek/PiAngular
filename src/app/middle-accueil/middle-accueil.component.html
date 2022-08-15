@@ -1,0 +1,57 @@
+<div class="column is-6">
+<div id="feed-post-1" class="card is-post" *ngFor="let post of Posts"> 
+    <div class="content-wrap">
+        <div class="card-body"> 
+                    <div class="post-text" >    
+                {{post.content}}
+                    </div>
+
+
+                    <div class="like-wrapper">
+                        <a href="javascript:void(0);" class="like-button">
+                            <i class="mdi mdi-heart not-liked bouncy"></i>
+                            <i class="mdi mdi-heart is-liked bouncy"></i>
+                            <span class="like-overlay"></span>
+                        </a>
+                    </div>
+
+
+
+
+
+
+                    <div class="fab-wrapper is-comment">
+                            <a href="javascript:void(0);" class="small-fab">
+                                <i data-feather="message-circle"></i>
+                            </a>
+                    </div>
+
+
+
+                   
+                    <div class="card-footer">
+                        <!-- Followers avatars -->
+    
+                        <!-- Followers text -->
+                        <div class="likers-text">
+    
+                            <p> 23 liked this</p>
+                        </div>
+                        <!-- Post statistics -->
+                        <div class="social-count">
+                            <div class="likes-count">
+                                <i data-feather="heart"></i>
+                                <span>27</span>
+                            </div>
+    
+                            <div class="comments-count">
+                                <i data-feather="message-circle"></i>
+                                <span>3</span>
+                            </div>
+                        </div>
+                    </div>
+        </div>
+    </div>  
+</div>
+</div>
+
